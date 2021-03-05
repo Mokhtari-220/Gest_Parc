@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF25143D-A10D-4A54-A2F1-DA2BA75E54A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gestion_parc</RootNamespace>
+    <AssemblyName>Gestion_parc</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Learning projs\TP15\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionManager.cs" />
+    <Compile Include="FormCarburants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCarburants.Designer.cs">
+      <DependentUpon>FormCarburants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFonctionnaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFonctionnaires.Designer.cs">
+      <DependentUpon>FormFonctionnaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMissions.Designer.cs">
+      <DependentUpon>FormMissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVehicules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVehicules.Designer.cs">
+      <DependentUpon>FormVehicules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\AddFonctionnaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\AddFonctionnaire.Designer.cs">
+      <DependentUpon>AddFonctionnaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\AddMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\AddMission.Designer.cs">
+      <DependentUpon>AddMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\AddVehicule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\AddVehicule.Designer.cs">
+      <DependentUpon>AddVehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\EditFonctionnaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\EditFonctionnaire.Designer.cs">
+      <DependentUpon>EditFonctionnaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\EditMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\EditMission.Designer.cs">
+      <DependentUpon>EditMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\EditVehicule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\EditVehicule.Designer.cs">
+      <DependentUpon>EditVehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themes.cs" />
+    <EmbeddedResource Include="FormCarburants.resx">
+      <DependentUpon>FormCarburants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFonctionnaires.resx">
+      <DependentUpon>FormFonctionnaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMissions.resx">
+      <DependentUpon>FormMissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVehicules.resx">
+      <DependentUpon>FormVehicules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\AddFonctionnaire.resx">
+      <DependentUpon>AddFonctionnaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\AddMission.resx">
+      <DependentUpon>AddMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\AddVehicule.resx">
+      <DependentUpon>AddVehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\EditFonctionnaire.resx">
+      <DependentUpon>EditFonctionnaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\EditMission.resx">
+      <DependentUpon>EditMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\EditVehicule.resx">
+      <DependentUpon>EditVehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gas_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mission_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shrink_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_Standard.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
